@@ -18,7 +18,7 @@ services:
             - '61002:3306'
 
     webserver:
-        image: 'arm64v8/nginx'
+        image: 'nginx:alpine'
         working_dir: /app
         volumes:
             - '.:/app'

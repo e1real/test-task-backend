@@ -4,7 +4,7 @@ services:
         image: 'redis:alpine'
 
     mysql:
-        image: 'mysql:8.0'
+        image: 'arm64v8/mysql:oracle'
         working_dir: /app
         volumes:
             - db:/var/lib/mysql
