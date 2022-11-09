@@ -31,4 +31,9 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'getway_service_1' => [
+        'merchant_id' => env('PAYMENT_PROVIDER_1_MERCHANT_ID'),
+        'merchant_key' => env('PAYMENT_PROVIDER_1_MERCHANT_KEY'),
+        'limit_per_day' => env('PAYMENT_PROVIDER_1_LIMIT_PER_DAY', 10),
+    ],
 ];
